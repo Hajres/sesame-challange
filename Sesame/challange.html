@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>sesame world</title>
+
+<style>
+
+ * {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #cc99ff;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin:0;
+
+}
+
+.header {
+	background-image: url("sesame.jpg"); 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+	height: 880px;
+	margin-top: 0;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	
+
+}
+
+.header p {
+	color: black;
+	font-size: 21px;
+	position: absolute;
+	top: 10%;
+	text-align: center;
+	left: 10%;
+
+}
+
+.button {
+	background-color: #ff3333;
+	border: none;
+	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+	padding: 15px 25px;
+	position: absolute;
+	right: 10%;
+	text-align: center;
+	top: 10%;
+	transition: background .4s;
+	text-decoration: none;
+	
+
+}
+
+
+
+ .button:active {
+  background-color: #cccc00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button:hover {background-color: #cccc00}
+
+
+
+.animation-container {
+	background-color:black;
+	height: 400px;
+    margin: 40px;
+    position: relative;  
+    overflow: auto;
+
+
+}
+
+#animation {
+	animation-name: sesame;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-direction:alternate;
+    animation-iteration-count: 3;
+    animation-play-state: paused;
+    -webkit-animation-name: sesame; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    background-color: blue;
+    cursor: pointer;
+    height: 100px;
+   	position: relative;
+    padding-top: 40px;
+    text-align: center;
+    width: 100px;
+     
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes sesame {
+    from {background-color:#3399ff; left:0px; top:0px;}
+    to {background-color:#3333ff; left: 1100px; top:0px;}     
+}
+
+/* Standard syntax */
+@keyframes sesame {
+    from  {background-color:#3399ff; left:0; top:0px;}
+    to  {background-color:#3333ff; left:1100px; top:0px;}
+}
+
+
+@media screen and (max-width: 480px){
+	.button {
+		top: 25%;
+		right: 30%
+	}
+	.header p {
+		left: 25%;
+	}
+}
+
+
+</style>
+
+
+<body>
+	<div class="header">
+		<!--<img src="sesame.jpg" height="863px" max-width="100%"> -->
+		<p>Welcome to kids <br>world!</p>
+		<a class="button" href="#scroll">start challange</a>
+	</div>
+	<div id="scroll" class="animation-container">
+		<div id="animation" onclick="myPlayFunction()">Click me!</div>
+	</div>
+
+</body>
+
+<script>
+	function myPlayFunction() {
+		document.getElementById('animation').style.animationPlayState = "running";
+	}
+	
+</script>
+</html>
+
+
+
+</body>
+
+</html>
