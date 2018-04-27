@@ -29,7 +29,6 @@ body {
 	position: relative;
 	width: 100%;
 	
-
 }
 
 .header p {
@@ -39,7 +38,6 @@ body {
 	top: 10%;
 	text-align: center;
 	left: 10%;
-
 }
 
 .button {
@@ -59,7 +57,6 @@ body {
 	transition: background .4s;
 	text-decoration: none;
 	
-
 }
 
 
@@ -70,13 +67,13 @@ body {
   transform: translateY(4px);
 }
 
-.button:hover {background-color: #cccc00}
+ .button:hover {background-color: #cccc00}
 
 
 
-.animation-container {
-	background-color:black;
-	height: 400px;
+ .animation-container {
+    background-color:black;
+    height: 400px;
     margin: 40px;
     position: relative;  
     overflow: auto;
@@ -85,7 +82,7 @@ body {
 }
 
 #animation {
-	animation-name: sesame;
+    animation-name: sesame;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-direction:alternate;
@@ -93,10 +90,14 @@ body {
     animation-play-state: paused;
     -webkit-animation-name: sesame; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction:alternate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
     background-color: blue;
     cursor: pointer;
     height: 100px;
-   	position: relative;
+    position: relative;
     padding-top: 40px;
     text-align: center;
     width: 100px;
