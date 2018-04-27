@@ -10,7 +10,7 @@ xhr.onload = function () {
 	//request finished and response is ready and status is ok.
 	if (xhr.readyState == 4 && xhr.status == "200") {
 		console.table(users); 
-		// Server will throw and error 
+		// Server  throws an error 
 	} else {
 		console.error(users); 
 	}
